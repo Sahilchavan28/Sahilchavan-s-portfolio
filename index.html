@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Chavan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</head>
+
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Sahil Chavan's Portfolio</a>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
+                <li><a href="#projects"><i class="fas fa-briefcase"></i>Projects</a></li>
+                <li><a href="#certifications"><i class="fas fa-certificate"></i>Certifications</a></li>
+                <li><a href="#resume"><i class="fas fa-file"></i>Resume</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+
+        </div>
+        <div class="nav-right">
+            🌙
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle" />
+                <span class="slider round"></span>
+            </label>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome</h2>
+            <h1>I'M SAHIL CHAVAN</h1>
+            <p>I'm a Computer Engineer and Full Stack DevOps Engineer.</p>
+            <div class="hero-image">
+                <img src="sahil photo.jpg" alt="Sahil Chavan Photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate and dedicated Computer Engineer with a strong interest in Python Full
+                Stack Development and DevOps. I am currently undergoing professional training in technologies like
+                Python, SQL, Django, Linux, AWS, Kubernetes, and Ansible.</p>
+            <p>I enjoy building practical projects, solving technical problems, and continuously learning new tools and
+                technologies. With a background in IT and a growing interest in cloud and automation, I aim to become a
+                skilled full stack DevOps engineer.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="marathi image.png" alt="Project 1">
+                    <h3>AI Based Image Generator</h3>
+                    <p>Python, TensorFlow, PyTorch, HTML, CSS, MySQL, XAMPP</p>
+                    <p>Developed an AI model that generates images from text input using deep learning.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- Certification section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certification-slider">
+                <a href="certificate\BTEC-FT-401132-Sahil Ravikant Chavan.pdf" target="_blank" class="cert-card">
+                    <h3>Python Training Certificate</h3>
+                    <p>Issued by:Besant technologies</p>
+                    <p>Issued: May 2025</p>
+                </a>
+
+                <a href="certificate\BT-ECFT-387022-SAHIL RAVIKANT CHAVAN.pdf" target="_blank" class="cert-card">
+                    <h3>Software Testing Training</h3>
+                    <p>Issued by:Besant technologies </p>
+                    <p>Issued: March 2025</p>
+                </a>
+
+                <a href="certificate\Gmail - Sahil Ravikant Chavan  Completion Certificate.png.pdf" target="_blank"
+                    class="cert-card">
+                    <h3>Web Development</h3>
+                    <p>Issued by:InernPe </p>
+                    <p>Issued: August 2023</p>
+                </a>
+
+                <a href="certificate\Latex_Certificate (1).pdf" target="_blank" class="cert-card">
+                    <h3>Technical Document Using Latex</h3>
+                    <p>Issued by:SSPM's COE. </p>
+                    <p>Issued:Feb 2024</p>
+                </a>
+
+                <!-- Add more certifications similarly -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal for viewing certification -->
+    <div id="certModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalOrg"></p>
+            <p id="modalDate"></p>
+            <img id="modalImg" src="" alt="Certification Image" />
+        </div>
+    </div>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my experience and skills.</p>
+            <a href=Sahil_Chavan_Resume.pdf class="btn" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+        <div id="thank-you-msg" style="display: none;">
+            <h3>Thank you! Your message has been sent.</h3>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sahil Chavan. All rights reserved.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> sahilchavan421@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 94200 20175</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Sahilchavan28" target="_blank" class="circle-icon"><i
+                        class="fab fa-github"></i><span>GitHub</span></a>
+                <a href="https://www.linkedin.com/in/chavansahil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" class="circle-icon"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                <a href="https://www.instagram.com/sahilchavan.1?igsh=djNhdWE1OTR0c2Vs" target="_blank"
+                    class="circle-icon"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
