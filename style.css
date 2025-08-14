@@ -2,24 +2,24 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ffd6a5, #ffe8d6);
-    color: #333;
-    transition: background 0.3s, color 0.3s;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #000000;
+    transition: background 0.9s, color 0.9s;
 }
 
-body.dark-mode {
-    background: linear-gradient(135deg, #1e1e1e, #121212);
+/* body.dark-mode {
+    background: linear-gradient(135deg, #000000, #121212);
     color: #ddd;
 }
 
 body.dark-mode .certifications {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.833);
     color: #ddd;
-}
+} */
 
 section {
     padding: 80px 20px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     /* Gap between sections */
 }
 
@@ -39,7 +39,7 @@ section {
 
 /* Dark mode overrides */
 /* Toggle Switch - Slider */
-.switch {
+/* .switch {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -86,7 +86,7 @@ input:checked+.slider {
 input:checked+.slider:before {
     transform: translateX(20px);
 }
-
+ */
 
 
 .container {
@@ -170,7 +170,7 @@ a {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #ff9f43;
+    background: #000000;
     /* warm orange */
     color: #fff;
     /* white text */
@@ -181,22 +181,22 @@ a {
 }
 
 .btn:hover {
-    background: #e67e22;
+    background: #0000006f;
     /* darker orange on hover */
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #ffb86c;
+    background-color: #ffffff;
     padding: 10px;
     text-align: center;
-    color: #4a3c1b;
+    color: #000000e2;
 }
 
-body.dark-mode nav {
-    background-color: #222;
+/* body.dark-mode nav {
+    background-color: #000000;
     color: #eee;
-}
+} */
 
 nav .container {
     display: flex;
@@ -213,7 +213,7 @@ nav .logo {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ff6a00;
+    color: #000000;
 }
 
 nav ul {
@@ -227,7 +227,7 @@ nav ul {
 
 
 nav ul li a {
-    color: #fff;
+    color: #000000bb;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -237,7 +237,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6a00;
+    color: #000000;
     /* orange highlight on hover */
 
 }
@@ -278,7 +278,7 @@ nav ul li a i {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    border: 3px solid #ff6a00;
+    border: 3px solid #000000;
 }
 
 .hero-image img {
@@ -287,15 +287,15 @@ nav ul li a i {
 
 .hero-image img:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 25px rgb(20, 21, 21);
 }
 
 
 .hero {
-    background: linear-gradient(135deg, #ffd6a5, #ffe8d6);
+    background: linear-gradient(135deg, #ffffff, #ffffffb5);
     padding: 100px 0;
     text-align: center;
-    color: #333;
+    color: #000000;
 }
 
 .hero h1 {
@@ -314,18 +314,18 @@ nav ul li a i {
 }
 
 .highlight {
-    color: #ff5733;
+    color: #ffffff;
     /* Highlight color for the emoji */
 }
 
 /* About Section */
 .about {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(255, 255, 255);
     /* translucent black background */
     border-radius: 12px;
     padding: 80px 0;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 
 .about p {
@@ -335,12 +335,12 @@ nav ul li a i {
 
 /* Projects Section */
 .projects {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(254, 254, 254);
     /* translucent black background */
     border-radius: 12px;
     padding: 80px 0;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 
 .projects h2 {
@@ -355,8 +355,9 @@ nav ul li a i {
 }
 
 .project-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    color: #000000;
     backdrop-filter: blur(5px);
 }
 
@@ -378,9 +379,9 @@ nav ul li a i {
 /* Certification cards */
 .certifications {
     padding: 80px 0;
-    background: #7a6454;
+    background: rgb(255, 255, 255);
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     /* Change this to your desired text color */
 }
 
@@ -399,15 +400,19 @@ nav ul li a i {
     scroll-behavior: smooth;
 }
 
+.certification-slider::-webkit-scrollbar {
+    height: 0px;
+}
+
 .cert-card {
     flex: 0 0 300px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.15);
     /* Dark background */
-    color: #fff;
+    color: #000000c2;
     /* White text */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.564);
     text-align: left;
     text-decoration: none;
     transition: transform 0.3s, background 0.3s, color 0.3s;
@@ -416,9 +421,9 @@ nav ul li a i {
 .cert-card:hover {
     transform: scale(1.05);
     /* Slight zoom on hover */
-    background: rgba(255, 165, 0, 0.1);
+    background: rgb(253, 253, 253);
     /* Soft orange tint on hover */
-    color: #ff6a00;
+    color: #000000;
     /* Optional: orange text on hover */
 }
 
@@ -435,7 +440,7 @@ nav ul li a i {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0);
 }
 
 .modal-content {
@@ -460,32 +465,32 @@ nav ul li a i {
     top: 10px;
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
     cursor: pointer;
 }
 
 .close:hover {
-    color: #ff9f43;
+    color: #000000;
 }
 
 
 /* Resume Section */
 .resume {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(255, 255, 255);
     /* translucent black background */
     border-radius: 12px;
     padding: 80px 0;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* contact Section */
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(255, 255, 255);
     border-radius: 12px;
-    color: #fff;
+    color: #000000;
     text-align: center;
 }
 
@@ -508,8 +513,8 @@ nav ul li a i {
     font-size: 1rem;
     border-radius: 6px;
     border: none;
-    background-color: #fff;
-    color: #333;
+    background-color: #00000021;
+    color: #000000;
 }
 
 .contact textarea {
@@ -518,8 +523,8 @@ nav ul li a i {
 }
 
 .contact button {
-    background-color: #ff9f43;
-    color: #fff;
+    background-color: #524a4a2c;
+    color: #000000;
     border: none;
     padding: 12px;
     font-size: 1rem;
@@ -529,12 +534,12 @@ nav ul li a i {
 }
 
 .contact button:hover {
-    background-color: #e67e22;
+    background-color: #4541413a;
 }
 
 /* Thank You Message */
 #thank-you-msg {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(0, 0, 0);
     padding: 40px;
     margin-top: 30px;
     border-radius: 10px;
@@ -543,7 +548,7 @@ nav ul li a i {
 }
 
 /* Dark mode adjustments */
-body.dark-mode .contact input,
+/* body.dark-mode .contact input,
 body.dark-mode .contact textarea {
     background-color: #333;
     color: #fff;
@@ -552,18 +557,18 @@ body.dark-mode .contact textarea {
 body.dark-mode #thank-you-msg {
     background-color: rgba(255, 255, 255, 0.05);
     color: #fff;
-}
+} */
 
 
 
 /* Footer */
 footer {
     footer {
-        background: #000000;
-        color: #fff;
+        background: #ffffff;
+        color: #000000;
         padding: 20px 0;
         text-align: center;
-        border-top: 2px solid #ff6a00;
+        border-top: 0px solid #ffffff;
     }
 
     footer .container {
@@ -576,12 +581,12 @@ footer {
 
     .contact-info p {
         margin: 5px 0;
-        color: #ccc;
+        color: #000000;
         font-size: 0.95rem;
     }
 
     .contact-info i {
-        color: #ff6a00;
+        color: #000000;
         margin-right: 8px;
     }
 
@@ -595,12 +600,12 @@ footer {
     .social-links a {
         margin: 0 10px;
         font-size: 1.5rem;
-        color: #ff6a00;
+        color: #000000;
         transition: color 0.3s ease;
     }
 
     .social-links a:hover {
-        color: #ffffff;
+        color: #000000be;
     }
 
     .circle-icon {
@@ -608,11 +613,11 @@ footer {
         flex-direction: column;
         align-items: center;
         text-decoration: none;
-        color: #ff6a00;
+        color: #000000;
     }
 
     .circle-icon i {
-        background-color: #ff6a00;
+        background-color: #000000;
         color: #fff;
         border-radius: 50%;
         padding: 10px;
@@ -626,7 +631,7 @@ footer {
     }
 
     .circle-icon:hover i {
-        background-color: #ff3e00;
+        background-color: #00000090;
     }
 
     .circle-icon:hover span {
